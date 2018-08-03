@@ -1,0 +1,3 @@
+# InstallZabbix
+
+How install Zabbix
