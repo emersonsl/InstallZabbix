@@ -1,0 +1,14 @@
+Modo de super usuário: $sudo su
+Atualizar a lista de repositorios: #apt-get update
+Instalar o agente zabbix: #apt-get install zabbix-agent
+Editar o arquivo de configuração: #gedit /etc/zabbix/zabbix_agentd.conf
+	
+Dentro do arquivo:
+	
+	Server=<Endereço do servidor>
+	ServerActive=<Endereço do servidor>
+	ListenPort=10050
+	Hostname=<identificação da maquina>
+
+Reiniciar o serviço: #systemctl restart zabbix-agent
+Adicionar a inicialização: #systemctl enable zabbix-agent
